@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .asideLink {
+    @apply w-full h-[52px] rounded-lg mb-4 flex items-center justify-center;
+  }
+  .asideLink.active {
+    background: var(
+      --gradient-primary,
+      linear-gradient(219deg, #ffab18 0%, #ff2197 100%)
+    );
+  }
+}
